@@ -1,0 +1,107 @@
+:root{
+--bg: #0b0c10;
+--card: rgba(255,255,255,0.06);
+--text: #f3f4f6;
+--muted: rgba(243,244,246,0.7);
+--stroke: rgba(255,255,255,0.12);
+}
+
+*{ box-sizing: border-box; }
+body{
+margin:0;
+font-family: system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+color: var(--text);
+background-image: url("cloud.jpg"); /* 하늘 이미지 파일명 */
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+position: relative;
+}
+
+body::before{
+content:"";
+position:absolute;
+inset:0;
+background: rgba(0,0,0,0.45); /* 어둡게 덮어줘서 가독성 확보 */
+}
+
+.wrap{
+min-height: 100svh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding: 24px;
+position:relative;
+z-index:1;
+}
+
+.card{
+width: min(560px, 100%);
+border: 1px solid var(--stroke);
+background: var(--card);
+border-radius: 20px;
+padding: 22px;
+backdrop-filter: blur(10px);
+}
+
+.profile{
+text-align:center;
+padding: 10px 10px 6px;
+}
+
+.avatar{
+width: 96px;
+height: 96px;
+border-radius: 999px;
+border: 1px solid var(--stroke);
+object-fit: cover;
+}
+
+.name{
+margin: 12px 0 6px;
+font-size: 22px;
+letter-spacing: -0.3px;
+}
+
+.bio{
+margin: 0 auto;
+max-width: 34ch;
+color: var(--muted);
+font-size: 14px;
+line-height: 1.5;
+}
+
+.links{
+display:grid;
+gap: 10px;
+margin-top: 16px;
+}
+
+.btn{
+display:flex;
+align-items:center;
+justify-content:center;
+padding: 14px 14px;
+border-radius: 14px;
+border: 1px solid var(--stroke);
+color: var(--text);
+text-decoration:none;
+background: rgba(255,255,255,0.04);
+transition: transform .08s ease, background .2s ease;
+font-weight: 600;
+}
+
+.btn:hover{ transform: translateY(-1px); background: rgba(255,255,255,0.08); }
+.btn:active{ transform: translateY(0px); }
+
+.btn.primary{
+background: rgba(99,102,241,0.25);
+border-color: rgba(99,102,241,0.5);
+}
+
+.footer{
+margin-top: 16px;
+text-align:center;
+color: var(--muted);
+font-size: 12px;
+}

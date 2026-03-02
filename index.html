@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>더 정성</title>
+
+<!-- Threads/카톡 공유 썸네일용(Open Graph) -->
+<meta property="og:title" content="누나 이름 | 링크 모음" />
+<meta property="og:description" content="문의/포트폴리오/블로그 링크를 한 곳에" />
+<meta property="og:type" content="website" />
+<!-- 아래 og:image는 나중에 실제 이미지 URL로 바꾸면 됨 -->
+<meta property="og:image" content="https://example.com/og-image.jpg" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="wrap">
+    <section class="card">
+    <div class="profile">
+        <img class="avatar" src="https://placehold.co/160x160" alt="프로필" />
+        <h1 class="name">더 정성</h1>
+        <p class="bio">한 아이를 키우듯 블로그를 정성으로 관리합니다.<br>
+        (블로그 상담/콘텐츠/디자인)</p>
+    </div>
+
+    <div class="links">
+        <a class="btn primary" href="https://open.kakao.com/o/XXXXXXX" target="_blank" rel="noopener">
+        블로그 관리 대행 문의하기
+        </a>
+
+        <a class="btn" href="file:///C:/Users/LG/Downloads/%EB%8D%94%20%EC%A0%95%EC%84%B1%20%EB%A7%88%EC%BC%80%ED%8C%85/%ED%8F%AC%ED%8F%B4/%ED%99%8D%EB%8B%A4%EA%B2%BD-%EA%B0%9C%EC%9D%B8-%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4(%EB%AF%B8%EC%BA%94).pdf" target="_blank" rel="noopener">
+        더 정성 포트폴리오
+        </a>
+
+        <a class="btn" href="https://blog.naver.com/happygiverekrud" target="_blank" rel="noopener">
+        더 정성 블로그
+        </a>
+    </div>
+
+    <footer class="footer">
+        <span>© <span id="y"></span> 더 정성</span>
+    </footer>
+    </section>
+</main>
+
+<script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
