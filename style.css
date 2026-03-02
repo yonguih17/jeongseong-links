@@ -65,7 +65,7 @@ letter-spacing: -0.3px;
 
 .bio{
 margin: 0 auto;
-max-width: 34ch;
+max-width: 60ch;  /* 34 → 60으로 변경 */
 color: var(--muted);
 font-size: 14px;
 line-height: 1.5;
